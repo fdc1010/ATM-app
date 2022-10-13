@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="bower_components/angular/angular.js"></script>
+    </head>
+<body>
+    <div ng-app="ATM" ng-controller="transact">
+        <h1>Hello, Welcome to Angular ATM</h1>
+        <input type="text" placeholder="Enter 4-digit PIN" 
+               ng-model="auth.pin" ng-hide="auth.verified">
+        <h2 ng-show="auth.verified"> Your balance is: ${{ auth.balance }} </h2>
+        <input type="text" placeholder="Enter an amount"
+               ng-model="auth.amount" ng-show="auth.verified">
+        <br><br>
+        <button ng-controller="submitPin" ng-click="verifyPin()" ng-hide="auth.verified">
+            Submit PIN
+        </button>
+        <button ng-controller="submitDeposit" ng-click="deposit()" ng-show="auth.verified">
+            Deposit this Amount
+        </button>
+        <button ng-controller="submitWithdrawal" ng-click="withdraw()" ng-show="auth.verified">
+            Withdraw this Amount
+        </button>
+    </div>
+    <script src="app-bundle.js"></script>
+</body>
+</html>

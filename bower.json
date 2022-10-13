@@ -1,0 +1,27 @@
+{
+  "name": "atm-app",
+  "description": "Automated Teller Machine written in Angular and Express",
+  "main": "server/productionServer.js",
+  "authors": [
+    "Franklin D Caruana <franklincaruana@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ATM"
+  ],
+  "homepage": "https://github.com/fdc1010/atm-app",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.11",
+    "angular-mocks": "^1.8.3"
+  }
+}

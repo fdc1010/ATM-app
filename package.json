@@ -1,0 +1,50 @@
+{
+  "name": "atm-app",
+  "version": "0.0.1",
+  "description": "Automated Teller Machine written in Angular and Express",
+  "main": "server/productionServer.js",
+  "engines": {
+    "node": "16.17.1"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon server/productionServer.js",
+    "test": "cat ./src/schema.sql | sqlite3 test.db && istanbul cover -x spec/DBspec.js ./node_modules/.bin/_mocha -- spec/DBspec.js && karma start --single-run",
+    "postinstall": "./node_modules/.bin/bower install && cat ./src/schema.sql | sqlite3 ATM.db"
+  },
+  "author": "Franklin D Caruana <franklincaruana@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.7",
+    "browserify-middleware": "^8.1.1",
+    "express": "^4.12.4",
+    "knex": "^2.3.0",
+    "nodemon": "^2.0.20",
+    "sqlite3": "^5.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "istanbul": "^0.4.2",
+    "karma": "^6.4.1",
+    "karma-cli": "^0.1.2",
+    "karma-coverage": "^0.5.3",
+    "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sinon-chai": "^1.2.0",
+    "karma-spec-reporter": "0.0.24",
+    "lolex": "^1.4.0",
+    "mocha": "^10.0.0",
+    "phantomjs-prebuilt": "^2.1.4",
+    "request": "^2.69.0",
+    "sinon": "^1.17.3",
+    "sinon-chai": "^2.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fdc1010/atm-app"
+  },
+  "bugs": {
+    "url": "https://github.com/fdc1010/atm-app/issues"
+  },
+  "homepage": "https://github.com/fdc1010/atm-app"
+}
