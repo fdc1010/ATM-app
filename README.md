@@ -26,4 +26,4 @@ A very simple automated teller machine implementation with front-end and back-en
 
 ## Testing
 
-To run the test suite, exit the server and run "npm test". In addition to the test results in the terminal, you will notice in the repo's root directory a new folder named "coverage". If you open the html files contained therein you will see the Karma-coverage and Istanbul reports for code coverage.
+To run the test suite, exit the server and run **"npm test"**. In addition to the test results in the terminal, you will notice in the repo's root directory a new folder named "coverage". If you open the html files contained therein you will see the Karma-coverage and Istanbul reports for code coverage.
