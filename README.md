@@ -13,7 +13,7 @@ How will you design such a system and what will be the main challenges?
 3. Human Error - No receipts,  no cash or machine is turned off.
 4. Not enough balance - cannot withdraw balance within the minimum.
 
-A very simple automated teller machine implementation with front-end and back-end test suite. Only accepts the PINS **1111**, **2222**, **3333**, and **4444**. Supports deposits and withdrawals. The tech stack is AngularJS, Node, Express, and a SQLite database. 
+A very simple automated teller machine implementation with front-end and back-end test suite. Only accepts the PINS **1111**, **2222**, **3333**, and **4444**. Supports deposits and withdrawals. The tech stack is AngularJS, Node, Express, and **SQLite database** is used for it to be protable and/or can retrieve data within premise. 
 
 ## Installation
 
