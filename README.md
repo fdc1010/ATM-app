@@ -1,6 +1,11 @@
 # ATM App
 
-How to design an ATM Machine that allows a user to deposit, withdraw cash, and check balance? How will you design such a system and what will be the main challenges?
+How to design an ATM Machine that allows a user to:
+- deposit
+- withdraw cash
+- check balance?
+
+How will you design such a system and what will be the main challenges?
 
 ## The main challenges will be:
 1. Security - Number of attempts before the card is locked out.
